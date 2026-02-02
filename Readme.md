@@ -37,21 +37,21 @@ This project includes a fixed header, collapsible sidebar, dashboard widgets, ca
 
 ## Tech Stack
 
---HTML5 – Semantic structure
+- HTML5 – Semantic structure
 
---CSS3 – Custom properties, Grid, Flexbox
+- CSS3 – Custom properties, Grid, Flexbox
 
---Javascript, Jquery – Function action the UI
+- Javascript, Jquery – Function action the UI
 
---Google Fonts – Inter & Montserrat
+- Google Fonts – Inter & Montserrat
 
---Font Awesome – Icons
+- Font Awesome – Icons
 
---Swiper.js – Gallery slider
+- Swiper.js – Gallery slider
 
---FullCalendar.js  – Calendar UI
+- FullCalendar.js  – Calendar UI
 
---Tippy.js – Tooltips
+- Tippy.js – Tooltips
 
 ---
 
@@ -71,11 +71,11 @@ project-root/
 
 ## Responsive Behavior
 
---Sidebar supports collapse mode
+- Sidebar supports collapse mode
 
---Layout adapts for desktop and tablet
+- Layout adapts for desktop and tablet
 
---Mobile toggle button available 
+- Mobile toggle button available 
 
 ## ⚙️ Installation & Setup
 
