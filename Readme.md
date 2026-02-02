@@ -56,8 +56,8 @@ This project includes a fixed header, collapsible sidebar, dashboard widgets, ca
 ---
 
 ## Project Structure
-
-project-root/
+```
+Dashboard-portal/
 │
 ├── css/
 │   └── style.css
@@ -67,6 +67,8 @@ project-root/
 │   └── main.js
 ├── index.html
 └── README.md
+
+```
 
 
 ## Responsive Behavior
