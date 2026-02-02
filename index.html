@@ -1,0 +1,634 @@
+<!DOCTYPE html>
+<html lang="en">
+   <head>
+      <meta charset="UTF-8" />
+      <meta name="viewport" content="width=device-width, initial-scale=1" />
+      <link rel="icon" href="assets/img/fav_icon.png" type="image/x-icon" />
+      <title>MC Intranet Portal</title>
+      <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet" />
+      <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css" />
+      <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"/>
+      <link href="https://cdn.jsdelivr.net/npm/fullcalendar@6.1.11/main.min.css" rel="stylesheet" />
+      <link rel="stylesheet" href="https://unpkg.com/tippy.js@6/dist/tippy.css">
+      <link rel="stylesheet" href="https://unpkg.com/tippy.js@6/animations/scale.css">
+      <link rel="stylesheet" href="assets/css/master.css" />
+      <link rel="stylesheet" href="assets/css/responsive.css" />
+     
+   </head>
+   <body>
+      <header role="banner">
+         <div class="topbar">
+            <div class="logo">
+               <img src="assets/img/logo.png" alt="logo" />
+            </div>
+            <div class="right_side_div">
+               <form class="form_div" role="search">
+                  <input id="search" type="search" placeholder="Search Entire Portal" aria-label="Search entire portal">
+                  <i class="fa fa-search" aria-hidden="true"></i>
+               </form>
+               <div class="profile_div">
+                  <div class="user-trigger">
+                     <div class="user_icon">
+                        <i class="fa-regular fa-user"></i>
+                     </div>
+                     <p>
+                        welcome, <span>R. Karthikeyan &nbsp;
+                        <i class="fa fa-caret-down"></i>
+                        </span>
+                     </p>
+                  </div>
+                  <div class="user-dropdown">
+                     <a href="#"><i class="fa fa-user"></i> My Profile</a>
+                     <a href="#"><i class="fa fa-cog"></i> Settings</a>
+                     <hr>
+                     <a href="#" class="logout"><i class="fa fa-sign-out-alt"></i> Logout</a>
+                  </div>
+               </div>
+               <button class="mobile-toggle" id="mobileToggle" aria-label="Open sidebar">
+               <i class="fa fa-bars"></i>
+               </button>
+            </div>
+         </div>
+      </header>
+      <div class="layout">
+         <aside class="sidebar collapsed" id="sidebar" role="navigation" aria-label="Main navigation">
+            <div class="logo mobile_logo"> <img src="assets/img/logo.png" alt="logo" /></div>
+            <nav>
+               <div class="nav_div">
+                  <a class="active">
+                  <i class="fa fa-home"></i>
+                  <span>Home</span>
+                  </a>
+               </div>
+               <div class="nav_div">
+                  <a>
+                  <i class="fa fa-building"></i>
+                  <span>About MC</span>
+                  </a>
+               </div>
+               <div class="nav_div">
+                  <a>
+                  <i class="fa fa-ticket"></i>
+                  <span>Ticketing</span>
+                  </a>
+               </div>
+               <div class="nav_div">
+                  <a>
+                  <i class="fa fa-file-lines"></i>
+                  <span>MOM</span>
+                  </a>
+               </div>
+               <div class="nav_div">
+                  <a>
+                  <i class="fa fa-circle-question"></i>
+                  <span>FAQ’s</span>
+                  </a>
+               </div>
+               <div class="nav_div">
+                  <a>
+                  <i class="fa fa-comments"></i>
+                  <span>Survey</span>
+                  </a>
+               </div>
+            </nav>
+            <div class="toggle-btn" id="toggleBtn">
+               <i class="fa-solid fa-chevron-right"></i>
+            </div>
+         </aside>
+         <div class="overlay" id="overlay"></div>
+         <main role="main">
+            <section class="banner_sec">
+               <h2>
+                  Hi, Karthikeyan! Welcome to Our Intranet Portal
+               </h2>
+            </section>
+            <section class="portal_section">
+               <div class="quick_links">
+                  <div class="quick_card card-yellow">
+                     <img src="assets/img/portal_icons/application.png" alt="application" />
+                     <p>
+                        Application
+                     </p>
+                  </div>
+                  <div class="quick_card card-green">
+                     <img src="assets/img/portal_icons/employee_directory.png" alt="employee_directory" />
+                     <p>
+                        Employee
+                        <span> Directory</span>
+                     </p>
+                  </div>
+                  <div class="quick_card card-pink">
+                     <img src="assets/img/portal_icons/tweet_corner.png" alt="tweet_corner" />
+                     <p>
+                        Corner
+                        <span>Tweet </span>
+                     </p>
+                  </div>
+                  <div class="quick_card card-green">
+                     <img src="assets/img/portal_icons/dashboard.png" alt="dashboard" />
+                     <p>Dashboard</p>
+                  </div>
+                  <div class="quick_card card-pink">
+                     <img src="assets/img/portal_icons/hoilday.png" alt="hoilday" />
+                     <p>
+                        Holiday
+                        <span>Calendar</span>
+                     </p>
+                  </div>
+                  <div class="quick_card card-blue">
+                     <img src="assets/img/portal_icons/mc events.png" alt="mc_events" />
+                     <p>
+                        MC Events
+                        <span>Calendar</span>
+                     </p>
+                  </div>
+                  <div class="quick_card card-blue">
+                     <img src="assets/img/portal_icons/ideas.png" alt="ideas" />
+                     <p>Ideas</p>
+                  </div>
+                  <div class="quick_card card-green">
+                     <img src="assets/img/portal_icons/survey.png" alt="survey" />
+                     <p>Survey</p>
+                  </div>
+                  <div class="quick_card card-blue">
+                     <img src="assets/img/portal_icons/birthday.png" alt="birthday" />
+                     <p>Birthdays</p>
+                  </div>
+               </div>
+               <div class="mt_card">
+                  <div class="mt_header">
+                     <h3 class="mt_title">My Tasks</h3>
+                     <button class="mt_export_btn">Export</button>
+                  </div>
+                  <div class="mt_task_div">
+                     <div class="mt_item">
+                        <h4 class="mt_item_title">
+                           Update ECD training content for workers and partners
+                        </h4>
+                        <p class="mt_item_desc">
+                           Revise ECD training modules and schedules.
+                        </p>
+                        <div class="mt_meta">
+                           <span class="mt_badge mt_badge_mom">MOM</span>
+                           <span class="mt_date">
+                           <i class="fa fa-calendar"></i>
+                           DUE DATE: JANUARY 10 2026
+                           </span>
+                           <span class="mt_badge mt_badge_pending">Pending</span>
+                        </div>
+                     </div>
+                     <div class="mt_divider"></div>
+                     <div class="mt_item">
+                        <h4 class="mt_item_title">
+                           Consolidate latest annual reports, publications
+                        </h4>
+                        <p class="mt_item_desc">
+                           Vivamus tincidunt id turpis at dictum. Vivamus orci risus.
+                        </p>
+                        <div class="mt_meta">
+                           <span class="mt_badge mt_badge_mom">MOM</span>
+                           <span class="mt_date">
+                           <i class="fa fa-calendar"></i>
+                           DUE DATE: JANUARY 10 2026
+                           </span>
+                           <span class="mt_badge mt_badge_pending">Pending</span>
+                        </div>
+                     </div>
+                     <div class="mt_divider"></div>
+                     <div class="mt_item">
+                        <h4 class="mt_item_title">
+                           Condeuct accessibility audit for WCAG compliance
+                        </h4>
+                        <p class="mt_item_desc">
+                           Suspendisse potenti. In faucibus massa arcu, vitae cursus mi hendrerit nec.
+                        </p>
+                        <div class="mt_meta">
+                           <span class="mt_badge mt_badge_mom">MOM</span>
+                           <span class="mt_date">
+                           <i class="fa fa-calendar"></i>
+                           DUE DATE: JANUARY 10 2026
+                           </span>
+                           <span class="mt_badge mt_badge_pending">Pending</span>
+                        </div>
+                     </div>
+                     <div class="mt_divider"></div>
+                     <div class="mt_item">
+                        <h4 class="mt_item_title">
+                           Condeuct accessibility audit for WCAG compliance
+                        </h4>
+                        <p class="mt_item_desc">
+                           Suspendisse potenti. In faucibus massa arcu, vitae cursus mi hendrerit nec.
+                        </p>
+                        <div class="mt_meta">
+                           <span class="mt_badge mt_badge_mom">MOM</span>
+                           <span class="mt_date">
+                           <i class="fa fa-calendar"></i>
+                           DUE DATE: JANUARY 10 2026
+                           </span>
+                           <span class="mt_badge mt_badge_pending">Pending</span>
+                        </div>
+                     </div>
+                  </div>
+               </div>
+               <div class="calendar_card mt_card">
+                  <div class=" mt_header calendar_header">
+                     <h3 class="mt_title">My Calendar</h3>
+                     <button class="mt_export_btn">Add Event</button>
+                  </div>
+                  <div id="calendar"></div>
+               </div>
+            </section>
+            <section class="feed_section">
+               <div class="nf_card">
+                  <div class="nf_header">
+                     <h3 class="nf_title">News Feed</h3>
+                     <span class="nf_link">ALL NEWS</span>
+                  </div>
+                  <div class="nf_tabs">
+                     <div class="nf_title">
+                        <span class="nf_tab nf_tab_active">Latest News</span>
+                        <span class="nf_tab">Latest Events</span>
+                        <span class="nf_tab">Updates & Announcements</span>
+                     </div>
+                     <div class="nf_tab_item nf_active">
+                        <div class="nf_tab_panel">
+                           <div class="nf_item">
+                              <div class="nf_date_box">
+                                 JAN<strong>25</strong>2026
+                              </div>
+                              <div class="nf_content">
+                                 <h4>Mobile Creches Strengthens Access to Quality Early Childhood Care</h4>
+                                 <p>
+                                    Mobile Creches continues its efforts to ensure children of migrant
+                                    workers have access to safe and nurturing childcare services.
+                                 </p>
+                              </div>
+                           </div>
+                           <div class="nf_divider"></div>
+                           <div class="nf_item">
+                              <div class="nf_date_box">
+                                 JAN<strong>14</strong>2026
+                              </div>
+                              <div class="nf_content">
+                                 <h4>Empowering Marginalised Women Through Structured Training</h4>
+                                 <p>
+                                    Through structured programmes, women from marginalised communities
+                                    gain essential childcare and early learning skills.
+                                 </p>
+                              </div>
+                           </div>
+                           <div class="nf_divider"></div>
+                           <div class="nf_item">
+                              <div class="nf_date_box">
+                                 JAN<strong>08</strong>2026
+                              </div>
+                              <div class="nf_content">
+                                 <h4>Empowering Marginalised Women Through Structured Training</h4>
+                                 <p>
+                                    Through structured programmes, women from marginalised communities
+                                    gain essential childcare and early learning skills.
+                                 </p>
+                              </div>
+                           </div>
+                        </div>
+                     </div>
+                     <div class="nf_tab_item">
+                        <div class="nf_tab_panel">
+                           <div class="nf_item">
+                              <div class="nf_date_box">
+                                 FEB<strong>02</strong>2026
+                              </div>
+                              <div class="nf_content">
+                                 <h4>National Early Childhood Development Conference</h4>
+                                 <p>
+                                    Experts and practitioners come together to discuss innovations
+                                    in early childhood education and care.
+                                 </p>
+                              </div>
+                           </div>
+                        </div>
+                     </div>
+                     <div class="nf_tab_item">
+                        <div class="nf_tab_panel">
+                           <div class="nf_item">
+                              <div class="nf_date_box">
+                                 MAR<strong>10</strong>2026
+                              </div>
+                              <div class="nf_content">
+                                 <h4>New Training Toolkit Released for Field Teams</h4>
+                                 <p>
+                                    A comprehensive toolkit has been released to support
+                                    field teams with updated training resources.
+                                 </p>
+                              </div>
+                           </div>
+                        </div>
+                     </div>
+                  </div>
+               </div>
+               <div class="km_card">
+                  <div class="km_header">
+                     <h3 class="km_title">Knowledge Management</h3>
+                     <a class="km_link">VIEW ALL</a>
+                  </div>
+                  <div class="km_card_div">
+                     <div class="km_item">
+                        <div class="km_file pdf"><i class="fa-solid fa-file-pdf"></i></div>
+                        <div class="km_text">
+                           <h4>Early Learning Activity Toolkit Released for Field Teams</h4>
+                           <span><i class="fa fa-calendar"></i>&nbsp;JANUARY 10 2026</span>
+                        </div>
+                        <div class="km_actions">
+                           <button><i class="fa-regular fa-eye"></i></button>
+                           <button><i class="fa-solid fa-download"></i></button>
+                        </div>
+                     </div>
+                     <div class="km_divider"></div>
+                     <div class="km_item">
+                        <div class="km_file doc"><i class="fa-solid fa-file-word"></i></div>
+                        <div class="km_text">
+                           <h4>Program Quality Checklist Updated With Safety Enhancements.docx</h4>
+                           <span><i class="fa fa-calendar"></i>&nbsp;JANUARY 10 2026</span>
+                        </div>
+                        <div class="km_actions">
+                           <button><i class="fa-regular fa-eye"></i></button>
+                           <button><i class="fa-solid fa-download"></i></button>
+                        </div>
+                     </div>
+                     <div class="km_divider"></div>
+                     <div class="km_item">
+                        <div class="km_file xls"><i class="fa-solid fa-file-excel"></i></div>
+                        <div class="km_text">
+                           <h4>Resource Pack Added: Nutrition & Health Monitoring Guidelines</h4>
+                           <span><i class="fa fa-calendar"></i>&nbsp;JANUARY 10 2026</span>
+                        </div>
+                        <div class="km_actions">
+                           <button><i class="fa-regular fa-eye"></i></button>
+                           <button><i class="fa-solid fa-download"></i></button>
+                        </div>
+                     </div>
+                     <div class="km_divider"></div>
+                     <div class="km_item">
+                        <div class="km_file pdf"><i class="fa-solid fa-file-pdf"></i></div>
+                        <div class="km_text">
+                           <h4>Early Learning Activity Toolkit Released for Field Teams</h4>
+                           <span><i class="fa fa-calendar"></i>&nbsp;JANUARY 10 2026</span>
+                        </div>
+                        <div class="km_actions">
+                           <button><i class="fa-regular fa-eye"></i></button>
+                           <button><i class="fa-solid fa-download"></i></button>
+                        </div>
+                     </div>
+                  </div>
+               </div>
+            </section>
+            <section class="hub_section">
+               <div class="km_header hub_header">
+                  <h3 class="km_title">Department Resource Hub</h3>
+                  <div class="resource_form">
+                     <form class="form_div" role="search">
+                        <i class="fa fa-search" aria-hidden="true"></i>
+                        <input id="search" type="search" placeholder="Search by Document" aria-label="Search by Document">
+                     </form>
+                     <form class="form_div" role="search">
+                        <i class="fa fa-search" aria-hidden="true"></i>
+                        <input id="search" type="search" placeholder="Search by Tags" aria-label="Search by Tags">
+                     </form>
+                  </div>
+               </div>
+               <div class="hub_content">
+                  <div class="departments">
+                     <ul>
+                        <li class="active" data-tab="hr">Human Resources</li>
+                        <li data-tab="program">Program Operations</li>
+                        <li data-tab="health">Health & Safety</li>
+                        <li data-tab="finance">Finance & Accounts</li>
+                        <li data-tab="csr">CSR & Community</li>
+                     </ul>
+                  </div>
+                  <div class="docs_wrapper">
+                     <div class="tab-panel active" data-panel="hr">
+                        <div class="doc_card">
+                           <img src="assets/img/document_icons/pdf.png" alt="pdf" />
+                           <a href="#" class="doc_title">HR Leave & Attendance Policy</a>
+                        </div>
+                        <div class="doc_card">
+                           <img src="assets/img/document_icons/excel.png" alt="excel" />
+                           <a href="#" class="doc_title">Child Enrollment & Exit SOP</a>
+                        </div>
+                        <div class="doc_card">
+                           <img src="assets/img/document_icons/word.png" alt="word" />
+                           <a href="#" class="doc_title">Field Visit & Reporting SOP</a>
+                        </div>
+                        <div class="doc_card">
+                           <img src="assets/img/document_icons/pdf.png" alt="pdf" />
+                           <a href="#" class="doc_title">Program Planning SOP</a>
+                        </div>
+                        <div class="doc_card">
+                           <img src="assets/img/document_icons/word.png" alt="word" />
+                           <a href="#" class="doc_title">Operational Guidelines</a>
+                        </div>
+                        <div class="doc_card">
+                           <img src="assets/img/document_icons/excel.png" alt="excel" />
+                           <a href="#" class="doc_title">Safety Checklist</a>
+                        </div>
+                        <div class="doc_card">
+                           <img src="assets/img/document_icons/pdf.png" alt="pdf" />
+                           <a href="#" class="doc_title">Community Engagement SOP</a>
+                        </div>
+                     </div>
+                     <div class="tab-panel" data-panel="program">
+                        <div class="doc_card">
+                           <img src="assets/img/document_icons/pdf.png" alt="pdf" />
+                           <a href="#" class="doc_title">Program Planning SOP</a>
+                        </div>
+                        <div class="doc_card">
+                           <img src="assets/img/document_icons/word.png" alt="word" />
+                           <a href="#" class="doc_title">Operational Guidelines</a>
+                        </div>
+                     </div>
+                     <div class="tab-panel" data-panel="health">
+                        <div class="doc_card">
+                           <img src="assets/img/document_icons/excel.png" alt="excel" />
+                           <a href="#" class="doc_title">Safety Checklist</a>
+                        </div>
+                     </div>
+                     <div class="tab-panel" data-panel="finance">
+                        <div class="doc_card">
+                           <img src="assets/img/document_icons/word.png" alt="word" />
+                           <a href="#" class="doc_title">Expense Reporting SOP</a>
+                        </div>
+                     </div>
+                     <div class="tab-panel" data-panel="csr">
+                        <div class="doc_card">
+                           <img src="assets/img/document_icons/pdf.png" alt="pdf" />
+                           <a href="#" class="doc_title">Community Engagement SOP</a>
+                        </div>
+                     </div>
+                  </div>
+               </div>
+            </section>
+            <section class="gallery_section">
+               <div class="gallery_div">
+                  <div class="swiper gallerySwiper">
+                     <div class="km_header hub_header">
+                        <h3 class="km_title">Photo and Video Gallery</h3>
+                        <div class="resource_form gallery_form">
+                           <form class="form_div" role="search">
+                              <i class="fa fa-search" aria-hidden="true"></i>
+                              <input id="search" type="search" placeholder="Search by Tags" aria-label="Search by Tags">
+                           </form>
+                           <a class="km_link">VIEW ALL</a>
+                           <div class="swiper-pagination"></div>
+                        </div>
+                     </div>
+                     <div class="swiper-wrapper">
+                        <div class="swiper-slide">
+                           <div class="main_card">
+                              <div class="gallery_card">
+                                 <img src="assets/img/gallary_pics/1.webp"  alt="Work Anniversaries" />
+                                 <div class="card_content">
+                                    <h4>Work Anniversaries</h4>
+                                    <span>125 PHOTOS</span>
+                                 </div>
+                              </div>
+                           </div>
+                        </div>
+                        <div class="swiper-slide">
+                           <div class="main_card">
+                              <div class="gallery_card">
+                                 <img src="assets/img/gallary_pics/2.webp"   alt="Events & Celebrations" />
+                                 <div class="card_content">
+                                    <h4>Events & Celebrations</h4>
+                                    <span>221 PHOTOS</span>
+                                 </div>
+                              </div>
+                           </div>
+                        </div>
+                        <div class="swiper-slide">
+                           <div class="main_card">
+                              <div class="gallery_card">
+                                 <img src="assets/img/gallary_pics/3.webp"  alt="People & Milestones" />
+                                 <div class="card_content">
+                                    <h4>People & Milestones</h4>
+                                    <span>98 PHOTOS</span>
+                                 </div>
+                              </div>
+                           </div>
+                        </div>
+                        <div class="swiper-slide">
+                           <div class="main_card">
+                              <div class="gallery_card">
+                                 <img src="assets/img/gallary_pics/4.webp" alt="Achievements & Recognition" />
+                                 <div class="card_content">
+                                    <h4>Achievements & Recognition</h4>
+                                    <span>12 PHOTOS</span>
+                                 </div>
+                              </div>
+                           </div>
+                        </div>
+                        <div class="swiper-slide">
+                           <div class="main_card">
+                              <div class="gallery_card">
+                                 <img src="assets/img/gallary_pics/5.webp"  alt="Life at Workplace" />
+                                 <div class="card_content">
+                                    <h4>Life at Workplace</h4>
+                                    <span>89 PHOTOS</span>
+                                 </div>
+                              </div>
+                           </div>
+                        </div>
+                     </div>
+                  </div>
+                  <div class="social_box">
+                     <h3>Social Links</h3>
+                     <p>Stay connected with us across our social platforms.</p>
+                     <div class="social_icons">
+                        <a href="#" class="fb">
+                        <i class="fab fa-facebook-f "></i>
+                        </a>
+                        <a href="#" class="twitter">
+                        <i class="fab fa-x-twitter "></i>
+                        </a>
+                        <a href="#" class="linkedin">
+                        <i class="fab fa-linkedin-in "></i>
+                        </a>
+                        <a href="#" class="instagram">
+                        <i class="fab fa-instagram "></i>
+                        </a>
+                        <a href="#" class="whatsapp">
+                        <i class="fab fa-whatsapp "></i>
+                        </a>
+                        <a href="#" class="youtube">
+                        <i class="fab fa-youtube "></i>
+                        </a>
+                     </div>
+                  </div>
+               </div>
+            </section>
+         </main>
+         <footer class="site_footer">
+            <div class="footer_top">
+               <div class="footer_col">
+                  <h4>About Us</h4>
+                  <p>
+                     Mobile Creches was conceptualized during the planning of the Gandhi
+                     Centenary celebrations on March 14, 1969. Initially known as Kasturba
+                     Shishu Vihar, it started as a small project at Rajghat amidst the chaos
+                     of the worksite. Meera Mahadevan led the initiative, and Devika Singh
+                     joined a few months later.
+                  </p>
+                  <a href="#" class="read_more">READ MORE</a>
+               </div>
+               <div class="footer_col">
+                  <h4>Quick Links</h4>
+                  <ul class="footer_links">
+                     <li><a href="#"><i class="fa-solid fa-play"></i>Application</a></li>
+                     <li><a href="#"><i class="fa-solid fa-play"></i>Employee Directory</a></li>
+                     <li><a href="#"><i class="fa-solid fa-play"></i>Tweet Corner</a></li>
+                     <li><a href="#"><i class="fa-solid fa-play"></i>Dashboard</a></li>
+                     <li><a href="#"><i class="fa-solid fa-play"></i>Holiday Calendar</a></li>
+                     <li><a href="#"><i class="fa-solid fa-play"></i>Ideas</a></li>
+                     <li><a href="#"><i class="fa-solid fa-play"></i>Survey</a></li>
+                  </ul>
+               </div>
+               <div class="footer_col">
+                  <h4>Contact Info</h4>
+                  <ul class="contact_list">
+                     <li>
+                        <i class="fa fa-map-marker-alt"></i>
+                        <span>DIZ Area, Raja Bazaar, Sector IV, New Delhi 110001, India</span>
+                     </li>
+                     <li>
+                        <i class="fa fa-phone"></i>
+                        <span>+91-11-23347635, 23347281</span>
+                     </li>
+                     <li>
+                        <i class="fa fa-map"></i>
+                        <span>Google Map Link for National Office</span>
+                     </li>
+                     <li>
+                        <i class="fa fa-globe"></i>
+                        <a href="https://www.mobilecreches.org/" target="_blank">
+                        https://www.mobilecreches.org/
+                        </a>
+                     </li>
+                  </ul>
+               </div>
+            </div>
+            <div class="footer_bottom">
+               <p>© 2026 Mobile Creches. . All Rights Reserved</p>
+               <button class="scroll_top" aria-label="Scroll to top">
+               <i class="fa fa-arrow-up"></i>
+               </button>
+            </div>
+         </footer>
+      </div>
+      <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+      <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+      <script src="https://cdn.jsdelivr.net/npm/fullcalendar@6.1.11/index.global.min.js"></script>
+      <script src="https://unpkg.com/@popperjs/core@2"></script>
+      <script src="https://unpkg.com/tippy.js@6"></script>
+      <script src="assets/js/main.js"></script>
+   </body>
+</html>
