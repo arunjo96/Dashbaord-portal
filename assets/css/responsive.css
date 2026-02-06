@@ -202,7 +202,7 @@
     }
 }
 
-@media (min-width: 990px) and (max-width: 1199px) {
+@media (min-width: 950px) and (max-width: 1199px) {
     .portal_section {
         grid-template-columns: 1fr 1fr 1.2fr;
     }
@@ -211,7 +211,7 @@
         grid-template-columns: repeat(2, 1fr);
     }
 
-    mt_task_div {
+    .mt_task_div {
         height: 100vh;
     }
 

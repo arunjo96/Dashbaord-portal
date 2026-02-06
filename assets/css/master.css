@@ -262,7 +262,7 @@ nav a:hover {
 
 nav a.active {
   background: #b91c1c;
-  color: #fff;
+  color: white;
 }
 
 .sidebar.collapsed nav a span {
